@@ -1,0 +1,148 @@
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+body {
+  background-color: #ecf2f8;
+}
+
+.container {
+  max-height: 100vh;
+  margin: 30px;
+  line-height: 1.5;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container h4 {
+  margin-bottom: 0px;
+  font-weight: normal;
+  margin-top: 0px;
+}
+
+.container h5 {
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+.container .card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card_wrapper {
+  position: relative;
+  border-radius: 10px;
+  margin: 2rem 0.005rem;
+  padding: 2rem;
+  color: white;
+  background: src(commas);
+}
+
+.container .card_wrapper .commas {
+  position: absolute;
+  height: 140px;
+  opacity: 30%;
+  top: 2%;
+  left: 54%;
+}
+
+.container .card_wrapper .author_img {
+  top: 0rem;
+  -webkit-clip-path: circle(47.5% at 50% 46%);
+          clip-path: circle(47.5% at 50% 46%);
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+.container .card_wrapper .card_author {
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card_wrapper .card_author h5 {
+  opacity: 50%;
+}
+
+.container .card_wrapper .card_title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.container .card_wrapper .card_content {
+  font-size: 0.8125rem;
+  opacity: 70%;
+}
+
+.container .card_wrapper {
+  background-color: #7541c8;
+}
+
+.container .card2 {
+  background-color: #48556a;
+}
+
+.container .card3 {
+  color: #48556a;
+  background-color: white;
+}
+
+.container .card4 {
+  background-color: #19212e;
+}
+
+.container .card5 {
+  color: #48556a;
+  background-color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 7rem 5rem 0rem 5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "card1 card1 card2 card5" "card3 card4 card4 card5";
+  }
+  .container .card1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: card1;
+  }
+  .container .card2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: card2;
+  }
+  .container .card3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: card3;
+  }
+  .container .card4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: card4;
+  }
+  .container .card5 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: card5;
+  }
+  .container .card_wrapper {
+    margin: 0.7rem;
+  }
+  .container .commas {
+    top: -52%;
+    left: 68%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
